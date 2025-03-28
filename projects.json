@@ -2,86 +2,86 @@
     {
         "title": "Task 1 Text",
         "description": "Text content for Task 1.",
-        "contentPath": "/tasks/task1/task1.txt"
+        "contentPath": "tasks/task1/task1.txt"
     },
     {
-        "title": "Task 2 Text",
-        "description": "Text content for Task 2.",
-        "contentPath": "/tasks/task2/index.html"
+        "title": "Task 2 HTML",
+        "description": "HTML content for Task 2.",
+        "contentPath": "tasks/task2/index.html"
     },
     {
         "title": "Task 3 HTML",
         "description": "HTML content for Task 3.",
-        "contentPath": "/tasks/task3/name.html"
+        "contentPath": "tasks/task3/name.html"
     },
     {
         "title": "Task 4 HTML",
         "description": "HTML content for Task 4.",
-        "contentPath": "/tasks/task4/jan30-1.html"
+        "contentPath": "tasks/task4/jan30-1.html"
     },
     {
         "title": "Task 5 HTML",
         "description": "HTML content for Task 5.",
-        "contentPath": "/tasks/task5/task2.html"
+        "contentPath": "tasks/task5/task2.html"
     },
     {
         "title": "Task 6 Text",
         "description": "Text content for Task 6.",
-        "contentPath": "/tasks/task6/task6.txt"
+        "contentPath": "tasks/task6/task6.txt"
     },
     {
         "title": "Task 7 Text",
         "description": "Text content for Task 7.",
-        "contentPath": "/tasks/task7/task7.txt"
+        "contentPath": "tasks/task7/task7.txt"
     },
     {
         "title": "Task 8 HTML",
         "description": "HTML content for Task 8.",
-        "contentPath": "/tasks/task8/task8.html"
+        "contentPath": "tasks/task8/task8.html"
     },
     {
         "title": "Task 9 HTML",
         "description": "HTML content for Task 9.",
-        "contentPath": "/tasks/task9/feb6.html"
+        "contentPath": "tasks/task9/feb6.html"
     },
     {
         "title": "Task 10 HTML",
         "description": "HTML content for Task 10.",
-        "contentPath": "/tasks/task10/task10.html"
+        "contentPath": "tasks/task10/task10.html"
     },
     {
         "title": "Task 11 HTML",
         "description": "HTML content for Task 11.",
-        "contentPath": "/tasks/task11/task11.html"
+        "contentPath": "tasks/task11/task11.html"
     },
     {
         "title": "Task 12 HTML",
         "description": "HTML content for Task 12.",
-        "contentPath": "/tasks/task12/every.html"
+        "contentPath": "tasks/task12/every.html"
     },
     {
         "title": "Task 13 HTML",
         "description": "HTML content for Task 13.",
-        "contentPath": "/tasks/task13/feb18task.html"
+        "contentPath": "tasks/task13/feb18task.html"
     },
     {
         "title": "Task 14 HTML",
         "description": "HTML content for Task 14.",
-        "contentPath": "/tasks/task14/taskfeb20.html"
+        "contentPath": "tasks/task14/taskfeb20.html"
     },
     {
         "title": "Task 14b HTML",
         "description": "HTML content for Task 14b.",
-        "contentPath": "/tasks/task14b/tsfeb25.html"
+        "contentPath": "tasks/task14b/tsfeb25.html"
     },
     {
         "title": "Task 15 HTML",
         "description": "HTML content for Task 15.",
-        "contentPath": "/tasks/task15/Companypage.html"
+        "contentPath": "tasks/task15/Companypage.html"
     },
     {
         "title": "Task 16 Text",
         "description": "Text content for Task 16.",
-        "contentPath": "/tasks/task16/task16.txt"
+        "contentPath": "tasks/task16/task16.txt"
     }
 ]
