@@ -77,10 +77,10 @@
     {
         "title": "Task 15 HTML",
         "description": "HTML content for Task 15.",
-        "contentPath": "/tasks/task15/Company.page (1).html"
+        "contentPath": "/tasks/task15/Companypage.html"
     },
     {
-        "title": "Task 16 Tex",
+        "title": "Task 16 Text",
         "description": "Text content for Task 16.",
         "contentPath": "/tasks/task16/task16.txt"
     }
