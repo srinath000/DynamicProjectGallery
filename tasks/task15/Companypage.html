@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Header Example</title>
+<style>
+  .header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure image fits within the logo container */
+  }
+
+  .company-name {
+    margin-right: auto;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer; /* Add cursor style to indicate it's clickable */
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">
+    <img src="your-logo.png" alt="Company Logo"> </div>
+  <div class="company-name">Company Name</div>
+  <a href="#" class="nav-link">Link</a>
+  <a href="#" class="nav-link">Link</a>
+  <a href="#" class="nav-link">Link</a>
+  <button class="button" onclick="alert('Home clicked!')">Home</button>
+  <button class="button" onclick="alert('Contact Us clicked!')">Contact Us</button>
+</div>
+
+</body>
+</html>

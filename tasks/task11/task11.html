@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+  <head>
+   
+    <title>Star Pattern</title>
+  </head>
+  <body>
+    <input
+      type="number"
+      placeholder="Enter a positive number"
+      id="userInput"
+      onkeyup="generateStarPattern()"
+    />
+    <br /><br />
+    <div id="outputDiv"></div>
+
+    <script>
+      function generateStarPattern() {
+        const rows = parseInt(document.getElementById("userInput").value);
+        let starPattern = "";
+        
+        for (let currentRow = 1; currentRow <= rows; currentRow++) {
+          for (let stars = 0; stars < currentRow; stars++) {
+            starPattern += "* ";
+          }
+          starPattern += "<br>";
+        }
+        
+        document.getElementById("outputDiv").innerHTML = starPattern;
+      }
+    </script>
+  </body>
+</html>
