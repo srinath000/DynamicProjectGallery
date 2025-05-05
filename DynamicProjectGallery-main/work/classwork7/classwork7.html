@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Output to Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #output-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Output</h1>
+    <div id="output-container">
+        <p>Output:</p>
+    </div>
+
+    <script>
+        let x = 10;
+        let outputContainer = document.getElementById('output-container');
+
+        // Function to display output
+        function displayOutput(value, description) {
+            let p = document.createElement('p');
+            p.textContent = description + ": " + value;
+            outputContainer.appendChild(p);
+        }
+
+        displayOutput(x, "Value of x");
+        let y = x + 5;
+        displayOutput(y, "Value of y (x + 5)");
+        let a = x * 4;
+        displayOutput(a, "Value of a (x * 4)");
+        let b = x - 4;
+        displayOutput(b, "Value of b (x - 4)");
+        let c = Math.floor(x / 3); // Use Math.floor for integer division
+        displayOutput(c, "Value of c (x // 3)");
+        let d = x / 5;
+        displayOutput(d, "Value of d (x / 5)");
+    </script>
+</body>
+</html>
