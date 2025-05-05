@@ -1,47 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('projects.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            const navbar = document.getElementById('navbar');
-            const mainContent = document.getElementById('main-content');
-
-            // Add the home page link first
-            const homeLink = document.createElement('a');
-            homeLink.href = "#";
-            homeLink.innerText = "Home";
-            homeLink.classList.add("home-button"); // Optional class for styling home
-            homeLink.addEventListener('click', () => {
-                mainContent.innerHTML = `<h2>Welcome to My Gallery</h2><p>Select a project from the menu to view details.</p>`;
-            });
-            navbar.appendChild(homeLink);
-
-            data.forEach((project, index) => {
-                const link = document.createElement('a');
-                link.href = "#";
-                link.innerText = project.title;
-                link.classList.add(`color-${index}`);
-                link.addEventListener('click', () => {
-                    fetch(project.contentPath)
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error(`HTTP error! status: ${response.status}`);
-                            }
-                            return response.text();
-                        })
-                        .then(html => {
-                            mainContent.innerHTML = html;
-                        })
-                        .catch(error => {
-                            mainContent.innerHTML = `<p>Error loading content: ${error}</p>`;
-                        });
-                });
-                navbar.appendChild(link);
-            });
-        })
-        .catch(error => console.error('Error fetching the JSON:', error));
+document.addEventListener('DOMContentLoaded', function () {
+    
+    const titles = ['Task 1: Expectation Document', 'Task 2: Basic HTML Styling', 'Task 3: CSS Hover', 'Task 4: Welcome to JS',
+        'Task 5: Calculator with JS', 'Task 6: GitHub Integration', 'Task 7: Console Output', 'Task 8: String Operation',
+        'Task 9: Conditions', 'Task 10: Call-Stack with Array', 'Task 11: Star with Loops', 'Task 12: Class Work',
+        'Task 13: Class Work - Objects', 'Task 14a: Class Work - Objects 2', 'Task 14b: Class Work - Functions',
+        'Task 15: Class Work - Class & Bootstrap', 'Task 16: Class Work - JSON'];
+    
+    
+    const nav = document.querySelector('nav');
+    titles.forEach((title, index) => {
+        const button = document.createElement('button');
+        button.textContent = title;
+        button.addEventListener('click', () => loadContent(index + 1));
+        nav.appendChild(button);
+    });
 });
+
+function loadContent(taskNumber) {
+    const content = document.getElementById('content');
+    content.innerHTML = '<iframe src="work/classwork' + taskNumber + (taskNumber.suffix ? taskNumber.suffix : '') + '/classwork' + taskNumber + (taskNumber.suffix ? taskNumber.suffix : '')+ '.html" style="width:100%; height:400px; border:none;"></iframe>';
+    //content.innerHTML = '<iframe src="works/classwork' + taskNumber + (taskNumber.suffix ? taskNumber.suffix : '') + '/classwork' + taskNumber + (taskNumber.suffix ? taskNumber.suffix : '') + '.html" style="width:100%; height:400px; border:none;"></iframe>';
+}
